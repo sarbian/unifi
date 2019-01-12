@@ -2,12 +2,12 @@ FROM debian:stretch
 MAINTAINER sarbian@sarbian.com
 
 ARG BUILD_DATE
-ARG VERSION=5.8.14
+ARG VERSION=5.8.30
 LABEL build_version="sarbian version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 
     # SET ENVIROMENT VARIABLES
 ENV DEBIAN_FRONTEND noninteractive
-ENV UNIFI_VERSION 5.8.14-7ef9535d1b
+ENV UNIFI_VERSION 5.8.30
 
     # INSTALL PACKAGES
 RUN echo "deb http://ftp.us.debian.org/debian stretch main" \
